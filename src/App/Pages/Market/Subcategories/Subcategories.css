@@ -1,0 +1,22 @@
+.menu-list {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    width: 377px;
+    height: 22px;
+    line-height: 18px;
+    color: #6C757D;
+    border-bottom: 1px solid #DFE2E4;
+    margin-bottom: 16px;
+}
+
+li {
+    list-style-type: none;
+    margin-right: 32px;
+}
+
+li:hover {
+    color: #0063F5;
+    border-bottom: 3px solid #0063F5;
+}
