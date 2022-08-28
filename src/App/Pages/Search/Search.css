@@ -1,0 +1,35 @@
+.coin-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8F9FA;
+}
+
+.coin-search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.coin-text {
+    text-align: center;
+}
+
+.coin-input {
+    padding-left: 16px;
+    width: 269px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #DFE2E4;
+    border-radius: 4px;
+    font-family: 'Circular Std', serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.coin-input::placeholder {
+    color: #DFE2E4;
+}

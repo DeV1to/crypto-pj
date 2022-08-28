@@ -3,15 +3,12 @@ import React, { useEffect, useState } from "react";
 
 import CoinCard from "@components/CoinCard/CoinCard";
 import axios from "axios";
+import "./Search.css";
 import { Link } from "react-router-dom";
 
-import MultiDropdown from "./MultiDropdown/MultiDropdown";
-import Subcategories from "./Subcategories/Subcategories";
-
-const Market = () => {
+const Search = () => {
   const [coins, setCoins] = useState([]);
-  const [filter, setFilter] = useState("");
-  const [selected, setSelected] = useState("Choose category:");
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     axios
@@ -25,23 +22,26 @@ const Market = () => {
   }, []);
 
   const handleChange = (e) => {
-    setFilter(e.target.value);
+    setSearch(e.target.value);
   };
 
   const filteredCoins = coins.filter((coin) =>
-    coin.name.toLowerCase().includes(filter.toLowerCase())
+    coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
   return (
     <div className="coin-app">
-      <Link to={"/search"}>Search</Link>
-      <MultiDropdown
-        selected={selected}
-        setSelected={setSelected}
-        onChange={handleChange}
-      />
-      <Subcategories />
-
+      <div className="coin-search">
+        <form>
+          <input
+            className="coin-input"
+            type="text"
+            onChange={handleChange}
+            placeholder="Search cryptocurrency"
+          />
+        </form>
+        <Link to={"/"}>Cancel</Link>
+      </div>
       {filteredCoins.map((coin) => {
         return (
           <CoinCard
@@ -59,4 +59,4 @@ const Market = () => {
   );
 };
 
-export default Market;
+export default Search;
