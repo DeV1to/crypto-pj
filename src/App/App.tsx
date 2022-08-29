@@ -1,6 +1,7 @@
 // @ts-ignore
 import React from "react";
 
+import CoinPage from "./Pages/CoinPage/CoinPage";
 import Market from "./Pages/Market/Market";
 
 import "./App.css";
@@ -16,7 +17,9 @@ const App = () => {
       <Routes>
         <Route path={"/"} element={<Market />} />
         <Route path={"/search"} element={<Search />} />
-        {/*<Route path={"/coin"} element={<Coin />} />*/}
+        <Route path={"/coin"}>
+          <Route path={":id"} element={<CoinPage />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );

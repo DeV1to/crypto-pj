@@ -40,7 +40,11 @@ const Search = () => {
             placeholder="Search cryptocurrency"
           />
         </form>
-        <Link to={"/"}>Cancel</Link>
+        <div>
+          <Link to={"/"} className={"cancel-btn"}>
+            Cancel
+          </Link>
+        </div>
       </div>
       {filteredCoins.map((coin) => {
         return (

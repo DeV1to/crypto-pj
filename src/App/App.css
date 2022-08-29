@@ -8,35 +8,46 @@
 .coin-app {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 375px;
+  margin: 0 auto;
   background: #F8F9FA;
 }
 
-.coin-search {
+.dropdown-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 24px;
+}
+
+.market__header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 31px;
+  padding: 40px 20px 0px;
+}
+
+.market-situation {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
 }
 
-.coin-text {
-  text-align: center;
+.market-situation__header {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 25px;
+  color: #212529;
+  margin-bottom: 4px;
 }
 
-.coin-input {
-  padding-left: 16px;
-  width: 269px;
-  height: 40px;
-  background: #FFFFFF;
-  border: 1px solid #DFE2E4;
-  border-radius: 4px;
-  font-family: 'Circular Std', serif;
+.market-situation__time {
   font-style: normal;
   font-weight: 450;
   font-size: 12px;
   line-height: 15px;
-}
-
-.coin-input::placeholder {
-  color: #DFE2E4;
+  color: #6C757D;
 }

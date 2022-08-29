@@ -7,9 +7,20 @@
 
 .coin-search {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 14px 20px 24px 20px;
+}
+
+.cancel-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #343A40;
 }
 
 .coin-text {
