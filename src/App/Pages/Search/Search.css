@@ -1,0 +1,46 @@
+.coin-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F8F9FA;
+}
+
+.coin-search {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    align-items: center;
+    padding: 14px 20px 24px 20px;
+}
+
+.cancel-btn {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration: none;
+    color: #343A40;
+}
+
+.coin-text {
+    text-align: center;
+}
+
+.coin-input {
+    padding-left: 16px;
+    width: 269px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #DFE2E4;
+    border-radius: 4px;
+    font-family: 'Circular Std', serif;
+    font-style: normal;
+    font-weight: 450;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.coin-input::placeholder {
+    color: #DFE2E4;
+}
